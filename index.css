@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700,700i|Open+Sans:300,300i,400,400i&subset=latin-ext");
+
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.heading {
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+
+.subheading {
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+hr {
+    display: block;
+    color: #4f5663;
+    border-width: 2px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 950px) {
+    hr {
+        display: none;
+    }
+}
+
+.banner {
+    width: 90%;
+    height: auto;
+    margin: 20px;
+
+    object-fit: cover;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    margin: 20px;
+}
+
+.contact {
+    margin-left: 20px;
+}
+
+.social-media > img {
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+}
+
+/* About us */
+
+.gallery-h2 {
+    font-family: "Gentium Basic", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: left;
+    
+}
+
+.about-us {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap; 
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.about-us-image  {
+    -webkit-flex-basis: 300px; 
+    -moz-flex-basis: 300px;
+    flex-basis: 420px;
+    margin: 10px;
+    
+    position: relative;
+    text-align: left;
+}
+
+.about-us-image img {
+    display: none;
+}
+
+@media only screen and (min-width: 950px) {
+    .about-us-image img {
+        display: block;
+        width: 100%;
+        border-radius: 70%;
+        object-fit: cover;
+    }
+}
+
+/* Kitchens */
+
+.kitchens {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap; 
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+}
+
+.kitchen-image  {
+    -webkit-flex-basis: 300px; 
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+    margin: 10px;
+    
+    position: relative;
+    text-align: center;
+}
+
+.post-header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kitchen-image img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
